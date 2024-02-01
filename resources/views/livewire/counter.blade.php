@@ -1,12 +1,12 @@
 <div style="text-align: center">
     <h1>Counter Component</h1>
-    <pre>Clicked <span>0</span> times!</pre>
+    <pre>Clicked <span>{{ $count }}</span> times!</pre>
     <div>
-        <button>
+        <button wire:click="increment">
             Increment
         </button>
 
-        <button>
+        <button wire:click="decrement">
             Decrement
         </button>
     </div>

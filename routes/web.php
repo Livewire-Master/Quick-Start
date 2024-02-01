@@ -13,7 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function ()
-{
-    return view('livewire.counter');
-});
+// Full-Page Component
+Route::get('', \App\Livewire\Counter::class);
